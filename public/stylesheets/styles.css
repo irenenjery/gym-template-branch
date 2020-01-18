@@ -1,0 +1,4 @@
+/* Imarisha stylesheet by Irene Njeri*/
+form#sign-in input{padding:8px;border:none;border-bottom:1px solid #808080;}
+/*form#sign-in input:focus{color:#fff!important;background-color:rgba(76, 175, 80,0.5);}*/
+#social li{display:inline-block;}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<title>IMARISHA GYM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/w3.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+ 	<ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
+    <li id="logo">
+			<a href="#home" class="w3-margin-left">
+				<b class="w3-hide-medium">IMARISHA</b><b class="w3-hide-large w3-hide-small">IM</b>GYM
+			</a>
+		</li><!-- li#logo -->
+		<!-- Show them on small screens -->
+		<li id="btn-small" class="w3-hide-medium w3-hide-large">
+			<a href="login.html" class="w3-btn w3-blue w3-tiny" style="display:inline-block;">login</a>
+			<a href="signup.html" class="w3-btn w3-black w3-tiny" style="display:inline-block;">signup</a>
+		</li><!-- li#btn-small -->
+		<!-- Hide them on small screens -->
+    <li id="top-form" class="w3-right w3-hide-small">
+      <form id="sign-in" name="sign-in">
+        <input type="text" name="username" placeholder="username" required \>
+        <input type="password" name="username" placeholder="password" required \>
+        <submit class="w3-btn w3-blue w3-small">login</submit>
+        <a href="signup.html" class="w3-btn w3-black w3-small" style="display:inline-block;">signup</a>	
+      </form><!-- form#sign-in -->
+    </li><!-- li#top-form -->
+  </ul><!-- ul.w3-navbar -->
+</div><!-- div.w3-top -->
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px;height:250px" id="home">
+  <div id="welcome" class="w3-display-middle w3-margin-top">
+    <h1 class="w3-xxlarge">
+    	Welcome to <span class="w3-border w3-border-black w3-padding">IMARISHA</span>
+    	<span class="w3-hide-small">Gym</span></h1>
+  </div><!-- div#welcome -->
+</header><!-- header#home -->
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+  <!-- Training Section -->
+  <section class="w3-container w3-padding-16" id="training">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Training Sessions</h3>
+  </section><!-- section#training -->
+  <section class="w3-row-padding" id="sessions">
+    <article class="w3-col l3 m6 w3-margin-bottom">
+      <section class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Early morning sessions: 5am - 6am</div>
+        <img src="public/images/img_session2.jpg" alt="sessions" style="width:100%">
+      </section>
+    </article><!-- article#w3-col -->
+    <article class="w3-col l3 m6 w3-margin-bottom">
+      <section class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Morning kickoff: 6:15am - 8am</div>
+        <img src="public/images/img_session3.jpg" alt="sessions" style="width:100%">
+      </section>
+    </article><!-- article#w3-col -->
+    <article class="w3-col l3 m6 w3-margin-bottom">
+      <section class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Mid morning: 9am - 11am</div>
+        <img src="public/images/img_session1.jpg" alt="sessions" style="width:100%">
+      </section>
+    </article><!-- article#w3-col -->
+    <article class="w3-col l3 m6 w3-margin-bottom">
+      <section class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Evening Session: 5pm - 8pm</div>
+        <img src="public/images/img_session.jpg" alt="sessions" style="width:100%">
+      </section>
+    </article><!-- article#w3-col -->
+  </section><!-- section#sessions -->
+
+  <!-- About Section -->
+  <section class="w3-container w3-padding-16" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">About</h3>
+    <p>Something about About
+    </p>
+  </section><!-- section#about -->
+
+  <!-- Pricing Section -->
+  <section class="w3-row-padding w3-grayscale w3-padding" id="pricing">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Pricing</h3>
+    <article class="w3-col l4 m4 w3-margin-bottom">
+      <div class="w3-display-container w3-padding w3-border w3-border-bronze w3-round" style="height:400px;">     
+	      <h3>Bronze Membership</h3>
+	      <p class="w3-opacity">Ksh 599 per month</p>
+	      <p>Regular self-training members...</p>
+	      <ul id="bronze">
+	      	<li class="bronze-item">Irene</li>
+	      	<li class="bronze-item">will</li>
+	      	<li class="bronze-item">update</li>
+	      	<li class="bronze-item">this</li>
+	      	<li class="bronze-item">if</li>
+	      	<li class="bronze-item">...more</li>
+	      </ul>
+	      <p>This is an optional sentence</p>
+	      <button class="w3-btn-block w3-bronze w3-display-bottomleft">Choose Package</button>
+      </div>
+    </article><!-- article.w3-col -->
+    <article class="w3-col l4 m4 w3-margin-bottom">
+      <div class="w3-display-container w3-padding w3-border w3-border-silver w3-round" style="height:400px;">        
+	      <h3>Silver Membership</h3>
+	      <p class="w3-opacity">Ksh 1,599 per month</p>
+	      <p>Personalized training sessions...</p>
+	      <ul id="silver">
+	      	<li class="silver-item">she</li>
+	      	<li class="silver-item">is</li>
+	      	<li class="silver-item">keen</li>
+	      	<li class="silver-item">enough.</li>
+	      	<li class="silver-item">What</li>
+	      	<li class="silver-item">...more</li>
+	      </ul>
+	      <p>This is another optional sentence</p>
+	      <button class="w3-btn-block w3-silver w3-display-bottomleft">Choose Package</button>
+      </div>
+    </article><!-- article.w3-col -->
+    <article class="w3-col l4 m4 w3-margin-bottom">
+      <div class="w3-display-container w3-padding w3-border w3-border-gold w3-round" style="height:400px;">         
+	      <h3>Gold Membership</h3>
+	      <p class="w3-opacity">Ksh 3,599 per month</p>
+	      <p>Personal trainer, video library and more...</p>
+	      <ul id="gold">
+	      	<li class="gold-item">if</li>
+	      	<li class="gold-item">she</li>
+	      	<li class="gold-item">doesn't?</li>
+	      	<li class="gold-item">It's</li>
+	      	<li class="gold-item">going to be</li>
+	      	<li class="gold-item">One heck of a presentation...</li>
+	      </ul>
+	      <p>This is yet another optional sentence</p>
+	      <button class="w3-btn-block w3-gold w3-display-bottomleft">Choose Package</button>
+      </div>
+    </article><!-- article.w3-col -->
+  </section><!-- section#pricing -->
+
+  <!-- Trainers Section -->
+  <section class="w3-row-padding w3-grayscale" id="trainers">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Meet Some of Our Personal Trainers</h3>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="public/images/img_arnie_500x333.jpg" class="w3-round" alt="arnie" style="width:100%">
+      <h3>@ArnieShwarzMwangi</h3>
+      <p class="w3-opacity">Hourly: ksh.250</p>
+      <p>I specialize in muscle building for men; biceps, triceps, you name them, we'll get them</p>
+      <p><a class="w3-btn-block" style="display:block;">Contact</a></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="public/images/img_karate_500x333.jpg" class="w3-round" alt="karate" style="width:100%">
+      <h3>@theKarateKat</h3>
+      <p class="w3-opacity">Hourly: Ksh.150</p>
+      <p>Wanna lose weight in a couple of months? Am your guy. I'll take you from fat to muscle</p>
+      <p><a class="w3-btn-block" style="display:block;">Contact</a></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="public/images/img_baby_500x333.jpg" class="w3-round" alt="baby" style="width:100%">
+      <h3>@toughMaybe</h3>
+      <p class="w3-opacity">Hourly: Ksh.300</p>
+      <p>Girls, where you at? Let's have some pulling showing men what it takes. #girlpower</p>
+      <p><a class="w3-btn-block" style="display:block;">Contact</a></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="public/images/img_gymbeach_500x333.jpg" class="w3-round" alt="gym" style="width:100%">
+      <h3>@gymnAtTheBeach</h3>
+      <p class="w3-opacity">Monthly: ksh2,500</p>
+      <p>Like to take things slow? Ladies, gents, I'll take you through a slow yet rigorous process, you'll love it.</p>
+      <p><a class="w3-btn-block" style="display:block;">Contact</a></p>
+    </div>
+  </section><!-- section#trainers -->
+
+  <!-- Contact Section -->
+  <section class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Location and Contacts</h3>
+    <p>If you have any questions, here's how you can reach us:</p>
+    <ul id="social">
+    	<li>FACEBOOK</li>
+    	<li>TWITTER</li>
+    	<li>INSTAGRAM</li>
+    	<li>YOUTUBE</li>
+    </ul>
+    <address>
+			nowhere, United States of Kenya<br>
+			Phone: +254 254 254<br>
+			Email: imarishwa@imarika.imara
+			Box 564, NEVERLAND<br>		
+		</address>
+  </section><!-- section#contact -->
+</div><!-- End page content -->
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>&copy;<a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">irene njeri</a></p>
+</footer>
+</body>
+</html>
+
