@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<title>IMARISHA GYM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/w3.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+ 	<ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
+    <li id="logo">
+			<a href="index.html" class="w3-margin-left">
+				<b class="w3-hide-medium">IMARISHA</b><b class="w3-hide-large w3-hide-small">IM</b>GYM
+			</a>
+		</li><!-- li#logo -->
+		<!-- Show them on small screens -->
+		<li id="btn-small" class="w3-hide-medium w3-hide-large">
+			<a href="login.html" class="w3-btn w3-blue w3-tiny" style="display:inline-block;">login</a>
+		</li><!-- li#btn-small -->
+		<!-- Hide them on small screens -->
+    <li id="top-form" class="w3-right w3-hide-small" style="margin-right:20px">
+      <form id="sign-in" name="sign-in">
+        <input type="text" name="username" placeholder="username" required \>
+        <input type="password" name="username" placeholder="password" required \>
+        <submit class="w3-btn w3-blue w3-small">login</submit>
+      </form><!-- form#sign-in -->
+    </li><!-- li#top-form -->
+  </ul><!-- ul.w3-navbar -->
+</div><!-- div.w3-top -->
+
+<div class="w3-content w3-padding-64" style="max-width:1564px">
+	<section id="signup-form" class="w3-panel w3-card-2 w3-padding-0" style="width:80%; margin:auto;">
+		<div class="w3-container w3-blue">
+	  	<h2>Registration Form</h2>
+		</div>
+
+		<form class="w3-container">
+			<h3>Package Details</h3>
+		  <p>
+		  <label class="w3-label w3-validate">
+		  	Choose a Package, <a href="#pricing" class="w3-tiny">click here for more info</a>
+		  </label></p>
+		  <p>
+		  <select class="w3-select w3-validate  w3-border" name="option" required />
+		    <option value="bronze" class="w3-bronze">
+		    	Bronze  <span class="opacity">Ksh 599 per month</span>
+		    </option>
+		    <option value="silver" class="w3-silver">
+		    	Silver  <span class="opacity">Ksh 1,599 per month</span>
+		    </option>
+		    <option value="gold" class="w3-gold">
+		    	Gold  <span class="opacity">Ksh 3,599 per month</span>
+		    </option>
+		  </select></p>
+		  <p>
+		  <input class="w3-input" type="text" name="first" placeholder="12x322020-Silver" required>
+		  <label class="w3-label w3-validate">Transaction ID</label></p>
+
+
+			<h3>Account Details</h3>
+		  <p>
+		  <input class="w3-input" type="text" name="first" placeholder="John/Jane" required>
+		  <label class="w3-label w3-validate">First Name</label></p>
+		  <p>
+		  <input class="w3-input" type="text" name="last" placeholder="Doe" required>
+		  <label class="w3-label w3-validate">Last Name</label></p>
+		  <p>
+		  <input class="w3-input" type="email" name="email" placeholder="janedoe@example.com" required>
+		  <label class="w3-label w3-validate">Email</label></p>
+		  <p>
+		  <input class="w3-input" type="password" name="pass" placeholder="strong password recommended" required>
+		  <label class="w3-label w3-validate">Password</label></p>
+		  <p>
+		  <input class="w3-input" type="password" name="pass2" placeholder="confirm password" required>
+		  <label class="w3-label w3-validate">Re-enter Password</label></p>
+
+
+		  <h3>Additional info</h3>
+		  <p>
+		  <h5><b>Gender</b></h5>
+		  <input class="w3-radio" type="radio" name="gender" value="male" id="male" checked>
+			<label for="male" class="w3-validate">Male</label>
+			<span style="display:inline-block;margin:0 20px;"></span>
+			<input class="w3-radio" type="radio" name="gender" value="female" id="female">
+			<label for="female" class="w3-validate">Female</label></p>
+
+
+		  <h5><b>Preferred Sessions</b></h5>
+		  <p>
+		  <input class="w3-check" type="checkbox" id="early" checked>
+			<label for="early" class="w3-validate">Early morning sessions: 5am - 6am</label><br>
+
+			<input class="w3-check" type="checkbox" id="kickoff">
+			<label for="kickoff" class="w3-validate">Morning kickoff: 6:15am - 8am</label><br>
+
+			<input class="w3-check" type="checkbox" id="midmorning">
+			<label for="midmorning" class="w3-validate">Mid morning: 9am - 11am</label><br>
+
+			<input class="w3-check" type="checkbox" id="evening">
+			<label for="evening" class="w3-validate">Evening Session: 5pm - 8pm</label><br>
+		  </p>
+
+
+		  <h5><b>Health Complications</b></h5>
+		  <p>
+		  <input class="w3-check" type="checkbox" id="health1">
+			<label for="health1" class="w3-validate">Complication 1</label><br>
+			
+		  <input class="w3-check" type="checkbox" id="health2">
+			<label for="health2" class="w3-validate">Complication 11</label><br>
+			
+		  <input class="w3-check" type="checkbox" id="health3" checked>
+			<label for="health3" class="w3-validate">Complication 111</label><br>
+			
+		  <input class="w3-check" type="checkbox" id="health4">
+			<label for="health4" class="w3-validate">Complication 1111</label><br>
+		  </p>
+
+		  <p>
+		  <button class="w3-btn-block w3-teal">Register</button></p>
+		</form>
+	</section>
+	
+
+	  <!-- Pricing Section -->
+  <section class="w3-row-padding w3-grayscale w3-padding" id="pricing">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Pricing</h3>
+    <article class="w3-col l4 m4 w3-margin-bottom">
+      <div class="w3-display-container w3-padding w3-border w3-border-bronze w3-round" style="height:400px;">     
+	      <h3>Bronze Membership</h3>
+	      <p class="w3-opacity">Ksh 599 per month</p>
+	      <p>Regular self-training members...</p>
+	      <ul id="bronze">
+	      	<li class="bronze-item">Irene</li>
+	      	<li class="bronze-item">will</li>
+	      	<li class="bronze-item">update</li>
+	      	<li class="bronze-item">this</li>
+	      	<li class="bronze-item">if</li>
+	      	<li class="bronze-item">...more</li>
+	      </ul>
+	      <p>This is an optional sentence</p>
+	      <button class="w3-btn-block w3-bronze w3-display-bottomleft">Choose Package</button>
+      </div>
+    </article><!-- article.w3-col -->
+    <article class="w3-col l4 m4 w3-margin-bottom">
+      <div class="w3-display-container w3-padding w3-border w3-border-silver w3-round" style="height:400px;">        
+	      <h3>Silver Membership</h3>
+	      <p class="w3-opacity">Ksh 1,599 per month</p>
+	      <p>Personalized training sessions...</p>
+	      <ul id="silver">
+	      	<li class="silver-item">she</li>
+	      	<li class="silver-item">is</li>
+	      	<li class="silver-item">keen</li>
+	      	<li class="silver-item">enough.</li>
+	      	<li class="silver-item">What</li>
+	      	<li class="silver-item">...more</li>
+	      </ul>
+	      <p>This is another optional sentence</p>
+	      <button class="w3-btn-block w3-silver w3-display-bottomleft">Choose Package</button>
+      </div>
+    </article><!-- article.w3-col -->
+    <article class="w3-col l4 m4 w3-margin-bottom">
+      <div class="w3-display-container w3-padding w3-border w3-border-gold w3-round" style="height:400px;">         
+	      <h3>Gold Membership</h3>
+	      <p class="w3-opacity">Ksh 3,599 per month</p>
+	      <p>Personal trainer, video library and more...</p>
+	      <ul id="gold">
+	      	<li class="gold-item">if</li>
+	      	<li class="gold-item">she</li>
+	      	<li class="gold-item">doesn't?</li>
+	      	<li class="gold-item">It's</li>
+	      	<li class="gold-item">going to be</li>
+	      	<li class="gold-item">One heck of a presentation...</li>
+	      </ul>
+	      <p>This is yet another optional sentence</p>
+	      <button class="w3-btn-block w3-gold w3-display-bottomleft">Choose Package</button>
+      </div>
+    </article><!-- article.w3-col -->
+  </section><!-- section#pricing -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>&copy;<a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">irene njeri</a></p>
+</footer>
+</body>
+</html>
