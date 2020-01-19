@@ -35,14 +35,14 @@
 	  	<h2>Join Imarisha Gymn</h2>
 		</div>
 
-		<form class="w3-container" name="sign-up">
+		<form class="w3-container" name="signup" id="signup">
 			<h3>Package Details</h3>
 		  <p>
 		  <label class="w3-label w3-validate">
 		  	Choose a Package, <a href="#pricing" class="w3-tiny">click here for more info</a>
 		  </label></p>
 		  <p>
-		  <select class="w3-select w3-validate  w3-border" name="option" required />
+		  <select class="w3-select w3-validate  w3-border" name="option" id="pkgselect" required />
 		    <option value="bronze" class="w3-bronze">
 		    	Bronze  <span class="opacity">Ksh 599 per month</span>
 		    </option>
@@ -153,7 +153,7 @@
 	      	<li class="bronze-item">...more</li>
 	      </ul>
 	      <p>This is an optional sentence</p>
-	      <button class="w3-btn-block w3-bronze w3-display-bottomleft">Choose Package</button>
+	      <a href="#signup" class="w3-btn-block w3-bronze w3-display-bottomleft" onclick="autoselectPackage('bronze')">Choose Package</a>
       </div>
     </article><!-- article.w3-col -->
     <article class="w3-col l4 m4 w3-margin-bottom">
@@ -170,7 +170,7 @@
 	      	<li class="silver-item">...more</li>
 	      </ul>
 	      <p>This is another optional sentence</p>
-	      <button class="w3-btn-block w3-silver w3-display-bottomleft">Choose Package</button>
+	      <a href="#signup" class="w3-btn-block w3-silver w3-display-bottomleft" onclick="autoselectPackage('silver')">Choose Package</a>
       </div>
     </article><!-- article.w3-col -->
     <article class="w3-col l4 m4 w3-margin-bottom">
@@ -187,7 +187,7 @@
 	      	<li class="gold-item">One heck of a presentation...</li>
 	      </ul>
 	      <p>This is yet another optional sentence</p>
-	      <button class="w3-btn-block w3-gold w3-display-bottomleft">Choose Package</button>
+	      <a href="#signup" class="w3-btn-block w3-gold w3-display-bottomleft" onclick="autoselectPackage('gold')">Choose Package</a>
       </div>
     </article><!-- article.w3-col -->
   </section><!-- section#pricing -->
@@ -197,5 +197,28 @@
 <footer class="w3-center w3-black w3-padding-16">
   <p>&copy;<a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">irene njeri</a></p>
 </footer>
+
+<script type="text/javascript">
+	/** Preselects a package option given a package name */
+	function autoselectPackage(pkgName) {
+		if ( pkgName === 'bronze'||'silver'||'gold') {
+				let pkgselect = document.getElementById('pkgselect'),
+						pkgoption = pkgselect.querySelector(`option[value="${pkgName}"]`);
+				//remove set attributes on each option fixes local selection bug #02
+				pkgselect.querySelectorAll('option').forEach(t=>t.removeAttribute('selected'));
+
+				pkgoption.setAttribute("selected", true);			
+		}
+	}
+	/** Preselects a package option from the url */
+	function autoselectPackageFromUrl() {
+		let params = new URLSearchParams(location.search),
+				pkg = params.get('pkg');
+		if ( !(params && pkg ) ) return;
+
+		autoselectPackage(pkg.toLowerCase());
+	}
+	autoselectPackageFromUrl();
+</script>
 </body>
 </html>
