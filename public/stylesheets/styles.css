@@ -1,4 +1,20 @@
 /* Imarisha stylesheet by Irene Njeri*/
+
+/* section#member_top */
+#logo{display:inline-block;}
+a#pkg-bronze{display:inline;padding:0;font-weight:bold;}
+a#pkg-bronze:hover{background-color:white;}
+#profile_pic{margin-right:20px;display:inline-block;}
+#profile_pic img{width:45px;height:45px;}
+
+/* header */
+header{max-width:1500px;height:250px;}
+
+/* #page_content */
+#page_content{max-width:1564px;min-height:500px;}
+
 form#sign-in input{padding:8px;border:none;border-bottom:1px solid #808080;}
-/*form#sign-in input:focus{color:#fff!important;background-color:rgba(76, 175, 80,0.5);}*/
 #social li{display:inline-block;}
+
+.time{display:inline-block;}
+.time-dot{display:inline-block;width:10px;height:10px;border-radius:50%;}

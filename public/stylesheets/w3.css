@@ -288,6 +288,11 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-pale-green,.w3-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
 .w3-pale-yellow,.w3-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
 .w3-pale-blue,.w3-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+/*non-standards*/
+  .w3-text-bronze,.w3-hover-text-bronze:hover{color:#CD7F32!important}
+  .w3-text-silver,.w3-hover-text-silver:hover{color:#C0C0C0!important}
+  .w3-text-gold,.w3-hover-text-gold:hover{color:#FFD700!important}
+/*non-standards*/
 .w3-text-amber,.w3-hover-text-amber:hover{color:#ffc107!important}
 .w3-text-aqua,.w3-hover-text-aqua:hover{color:#00ffff!important}
 .w3-text-blue,.w3-hover-text-blue:hover{color:#2196F3!important}
